@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
+
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
@@ -9,7 +10,7 @@ import { CartPage } from './pages/CartPage';
 import { VisitPage } from './pages/VisitPage';
 import { CartProvider } from './components/CartContext';
 export function App() {
-  return <BrowserRouter>
+  return <HashRouter>
       <CartProvider>
         <div className="min-h-screen bg-cream-50 text-brown-900">
           <Header />
@@ -25,5 +26,5 @@ export function App() {
           <Footer />
         </div>
       </CartProvider>
-    </BrowserRouter>;
+    </HashRouter>;
 }
