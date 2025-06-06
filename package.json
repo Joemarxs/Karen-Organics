@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "npx vite",
-    "build": "npx vite dist",
+    "build": "npx vite",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "preview": "npx vite preview",
     "predeploy": "npm run build",
