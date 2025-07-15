@@ -1,16 +1,19 @@
-export default {content: [
-  './index.html',
-  './src/**/*.{js,ts,jsx,tsx}'
-],
+export default {
+  content: [
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
+  ],
   theme: {
     extend: {
       colors: {
-        'cream': {
-          50: '#FFFDF5',
-          100: '#FAF5E7',
-          200: '#F5EBD7',
+        cream: {
+          50: '#F9F8F6',
+          100: '#F1EFEC',
+          200: '#E6E2DD',
+          300: '#DCD7D0',
+          400: '#D5CFC8',
         },
-        'brown': {
+        brown: {
           100: '#F5F0EB',
           200: '#E6DFD7',
           300: '#D7CFC5',
@@ -21,19 +24,28 @@ export default {content: [
           800: '#463C2F',
           900: '#2C2620',
         },
-        'green': {
-          50: '#F0F9F1',
-          100: '#DCF1DE',
-          200: '#BBE3BE',
-          300: '#93D097',
-          400: '#6AB970',
-          500: '#48A24F',
-          600: '#3A8241',
-          700: '#2F6A35',
-          800: '#27532B',
-          900: '#1F4022',
-        }
-      }
-    }
-  }
-}
+        green: {
+          50: '#f0fdf4',
+          100: '#dcfce7',
+          200: '#bbf7d0',
+          300: '#86efac',
+          400: '#4ade80',
+          500: '#22c55e',
+          600: '#16a34a',
+          700: '#15803d',
+          800: '#166534',
+          900: '#14532d',
+        },
+      },
+      keyframes: {
+        zoomFade: {
+          '0%': { transform: 'scale(1)', opacity: '1' },
+          '100%': { transform: 'scale(1.1)', opacity: '1' },
+        },
+      },
+      animation: {
+        zoomFade: 'zoomFade 5s ease-in-out forwards',
+      },
+    },
+  },
+};

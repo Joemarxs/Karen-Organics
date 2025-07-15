@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { MapPin, Phone, Calendar } from 'lucide-react';
 export function VisitSection() {
   return <section id="visit" className="py-16 bg-cream-100">
@@ -32,26 +33,26 @@ export function VisitSection() {
               <MapPin size={24} className="text-green-700 mr-3 mt-1" />
               <div>
                 <h4 className="font-medium text-brown-800">Location</h4>
-                <p className="text-brown-600">123 Countryside Road</p>
-                <p className="text-brown-600">Farmington, CA 95230</p>
+                <p className="text-brown-600">Kenya</p>
+                <p className="text-brown-600">Kiambu</p>
               </div>
             </div>
             <div className="flex items-start">
               <Phone size={24} className="text-green-700 mr-3 mt-1" />
               <div>
                 <h4 className="font-medium text-brown-800">Contact</h4>
-                <p className="text-brown-600">(555) 123-4567</p>
-                <p className="text-brown-600">info@karennaturalorganics.com</p>
+                <p className="text-brown-600">+254 725 566 168</p>
+                <p className="text-brown-600">info@karenorganics.com</p>
               </div>
             </div>
             <div className="mt-6">
-              <a href="#" className="bg-green-700 text-white px-6 py-3 rounded-md hover:bg-green-800 transition inline-block text-lg font-medium">
+              <Link to="/visit" className="bg-green-700 text-white px-6 py-3 rounded-md hover:bg-green-800 transition inline-block text-lg font-medium">
                 Schedule a Tour
-              </a>
+              </Link>
             </div>
           </div>
           <div className="md:w-1/2">
-            <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80" alt="Karen Natural Organics farm with chickens roaming freely" className="w-full h-full object-cover rounded-lg shadow-md" />
+            <img src="https://images.unsplash.com/photo-1648228726568-8f51ac243842?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8" />
           </div>
         </div>
       </div>

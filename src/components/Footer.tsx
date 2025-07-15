@@ -1,16 +1,25 @@
 import React from 'react';
 import { Facebook, Instagram, Twitter, Mail } from 'lucide-react';
+import { BsWhatsapp } from 'react-icons/bs';
 export function Footer() {
   return <footer className="bg-green-800 text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">Karen Natural Organics</h3>
+            <h3 className="text-xl font-bold mb-4">Karen Organics</h3>
             <p className="text-green-100 mb-4">
               Bringing farm-fresh, organic chicken products from our family to
-              yours since 2010.
+              yours.
             </p>
             <div className="flex space-x-4">
+              <a
+                href="https://wa.me/254734841266"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-green-200"
+              >
+                <BsWhatsapp size={24} />
+              </a>
               <a href="#" className="text-white hover:text-green-200">
                 <Facebook size={24} />
               </a>
@@ -78,16 +87,17 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <address className="not-italic text-green-100">
-              <p>123 Countryside Road</p>
-              <p>Farmington, CA 95230</p>
-              <p className="mt-2">(555) 123-4567</p>
-              <p>info@karennaturalorganics.com</p>
+              
+              <p className="mt-2">+254 725 566 168</p>
+              <p>info@karenorganics.com</p>
+              <p>Kenya</p>
+              <p>Kiambu</p>
             </address>
           </div>
         </div>
         <div className="border-t border-green-700 mt-8 pt-8 text-center text-green-200">
           <p>
-            &copy; {new Date().getFullYear()} Karen Natural Organics. All rights
+            &copy; {new Date().getFullYear()} Karen Organics. All rights
             reserved.
           </p>
         </div>
