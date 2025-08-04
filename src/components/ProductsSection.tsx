@@ -63,7 +63,7 @@ export function ProductsSection() {
           Our Products
         </h2>
         <p className="text-lg text-brown-700 text-center max-w-xl mx-auto mb-12">
-          Explore our farm's finest — fresh, organic, and straight to your table.
+          Explore our farm's finest fresh, organic, and straight to your table.
         </p>
 
         <div className="relative">

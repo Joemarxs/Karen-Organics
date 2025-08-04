@@ -1,6 +1,5 @@
 {
-  "name": "karen",
-  "homepage": "https://joemarxs.github.io/karen/",
+  "name": "magic-patterns-vite-template",
   "version": "0.0.1",
   "private": true,
   "type": "module",
@@ -8,9 +7,7 @@
     "dev": "npx vite",
     "build": "npx vite build",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "preview": "npx vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "npx vite preview"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
